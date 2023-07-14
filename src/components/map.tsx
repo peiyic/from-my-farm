@@ -2,7 +2,7 @@
 import MapGL, { Marker, Popup } from "react-map-gl";
 import {useState, useMemo} from 'react';
 import { Farmer } from '../models/farmer';
-import FARMERS from '../../data/famers.json';
+import FARMERS from '../../data/farmers.json';
 
 const Map = () => {
     const [popupInfo, setPopupInfo] = useState<Farmer | null>(null);
