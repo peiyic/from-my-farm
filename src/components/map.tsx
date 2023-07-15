@@ -1,5 +1,6 @@
 "use client";
 import MapGL, { Marker, Popup } from "react-map-gl";
+import 'mapbox-gl/dist/mapbox-gl.css'
 import {useState, useMemo} from 'react';
 import { Farmer } from '../models/farmer';
 import FARMERS from '../../data/farmers.json';
