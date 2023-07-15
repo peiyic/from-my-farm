@@ -47,8 +47,8 @@ const Map = () => {
             onClose={() => setPopupInfo(null)}
           >
             <div>
-              {popupInfo.name}
-              {popupInfo.address.text}
+              <div>Address: {popupInfo.address.text}</div>
+              <div>Products: {popupInfo.products.join(',')}</div>
             </div>
           </Popup>
         )}

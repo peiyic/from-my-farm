@@ -3,9 +3,13 @@
         "username": "peiyic",
         "name": "Peiyi Chi",
         "address": {
-            "latitude": -43.525650,
-            "longitude": 172.639847,
+            "latitude": -43.487068757661724,
+            "longitude": 172.58789490942556,
             "text": "9A Highsted Road"
-        }
+        },
+        "products": [
+            "apple",
+            "egg"
+        ]
     }
 ]

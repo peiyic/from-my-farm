@@ -7,5 +7,6 @@ export interface Address {
 export interface Farmer {
     username: string,
     address: Address,
-    name: string
+    name: string,
+    products: string[]
 };
