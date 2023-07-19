@@ -1,6 +1,7 @@
 "use client";
 import MapGL, { Marker, Popup, GeolocateControl } from "react-map-gl";
 import 'mapbox-gl/dist/mapbox-gl.css'
+import styles from './map.module.css'
 import {useState, useMemo} from 'react';
 import { Farmer } from '../models/farmer';
 import FARMERS from '../../data/farmers.json';
@@ -46,7 +47,7 @@ const Map = () => {
             latitude={Number(popupInfo.address.latitude)}
             onClose={() => setPopupInfo(null)}
           >
-            <div>
+            <div className={styles.popup}>
               <div>Address: {popupInfo.address.text}</div>
               <div>Products: {popupInfo.products.join(',')}</div>
             </div>
