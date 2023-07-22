@@ -1,4 +1,8 @@
 .popup {
     color: white;
-    background-color: rebeccapurple;
+    padding: 4px;
+    border-radius: 4px;    
+    background-color: rgba(179, 226, 157, 0.959);
+    font-size: larger;
+    font-weight: bold;
 }
