@@ -11,5 +11,18 @@
             "apple",
             "egg"
         ]
+    },
+    {
+        "username": "8balance",
+        "name": "James",
+        "address": {
+            "latitude": -43.506770783420635,
+            "longitude": 172.59063438846073,
+            "text": "19 Bateman Avenue"
+        },
+        "products": [
+            "Banana",
+            "Pineapple"
+        ]
     }
 ]
