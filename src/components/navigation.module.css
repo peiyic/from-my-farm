@@ -1,8 +1,17 @@
 .navigation {
-    color: white;
-    text-align: center;
     height: 45px;
     background-color: #487943;
+    display: grid;
+    align-items: center;
+}
+
+.title {
+    margin-left: 20px;
+    color: white;
     font-size: larger;
     font-weight: bold;
+}
+
+.sidebar {
+    color: white;
 }
