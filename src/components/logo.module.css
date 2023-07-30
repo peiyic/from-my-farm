@@ -1,8 +1,5 @@
-.navigation {
-    height: 45px;
+.box {
     background-color: #487943;
-    display: grid;
-    align-items: center;
 }
 
 .title {
@@ -10,8 +7,4 @@
     color: white;
     font-size: larger;
     font-weight: bold;
-}
-
-.sidebar {
-    color: white;
 }
