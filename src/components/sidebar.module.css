@@ -1,6 +1,6 @@
-.box {
-    width: 80px;
+.grid {
     background-color: #487943;
+    grid-area: sidebar;
 }
 
 .title {

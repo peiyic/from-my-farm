@@ -16,24 +16,13 @@
 
 .grid-container {
   display: grid;
-  width: 100vw;
   height: 100vh;
-}
-
-.item-1 {
-  grid-row: 1;
-}
-
-.item-2 {
-  grid-row: 2;
-}
-
-.item-3 {
-  grid-column: 1;
-}
-
-.item-4 {
-
+  width: 100vw;
+  grid-template-columns: 180px auto;
+  grid-template-rows: 60px 60px ;
+  grid-template-areas: "logo logo"
+                       "search search"
+                       "sidebar map";
 }
 
 .mapboxgl-popup-content {

@@ -1,5 +1,6 @@
-.box {
+.grid {
     background-color: #487943;
+    grid-area: search
 }
 
 .title {

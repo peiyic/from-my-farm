@@ -1,3 +1,7 @@
+.grid {
+    grid-area: map;
+}
+
 .popup {
     color: white;
     padding: 4px;
