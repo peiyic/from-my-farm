@@ -8,7 +8,7 @@ export async function GET(request: Request) {
           SELECT DISTINCT array_agg(product) as products
           FROM ownership
           `;
-        return NextResponse.json({ result }, { status: 200 });
+        return NextResponse.json({ data: result.rows }, { status: 200 });
       } catch (error) {
         return NextResponse.json({ error }, { status: 500 });
       }

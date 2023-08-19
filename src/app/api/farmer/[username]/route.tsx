@@ -11,7 +11,7 @@ export async function GET(request: Request, context: { params: { username: strin
           WHERE farmer.username = ${context.params.username}
           GROUP BY farmer.username
           `;
-        return NextResponse.json({ result }, { status: 200 });
+        return NextResponse.json({ data: result.rows }, { status: 200 });
       } catch (error) {
         return NextResponse.json({ error }, { status: 500 });
       }

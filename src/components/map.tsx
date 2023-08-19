@@ -10,8 +10,8 @@ const Map = () => {
     useEffect(() => {
       async function fetchFarmers() {
           const response = await fetch('/api/farmers');
-          const data = await response.json();
-          setFarmers(data.result.rows);
+          const result = await response.json();
+          setFarmers(result.data);
       }
       fetchFarmers();
     }, []);

@@ -10,7 +10,7 @@ export async function GET(request: Request) {
           LEFT JOIN ownership ON farmer.username = ownership.farmer_username
           GROUP BY farmer.username
           `;
-        return NextResponse.json({ result }, { status: 200 });
+        return NextResponse.json({ data: result.rows }, { status: 200 });
       } catch (error) {
         return NextResponse.json({ error }, { status: 500 });
       }
