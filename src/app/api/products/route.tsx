@@ -5,10 +5,8 @@ export async function GET(request: Request) {
     try {
         const result =
           await sql`
-          SELECT farmer.username, farmer.name, farmer.address, farmer.coordinates, array_agg(ownership.product) AS products 
-          FROM farmer 
-          LEFT JOIN ownership ON farmer.username = ownership.farmer_username
-          GROUP BY farmer.username
+          SELECT DISTINCT array_agg(product) as products
+          FROM ownership
           `;
         return NextResponse.json({ result }, { status: 200 });
       } catch (error) {
