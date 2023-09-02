@@ -1,12 +1,10 @@
-export interface Address {
-    latitude: number,
-    longitude: number,
-    text: string
-};
-
 export interface Farmer {
     username: string,
-    address: Address,
+    address: string,
+    coordinates: {
+        x: number,
+        y: number
+    }
     name: string,
     products: string[]
 };
