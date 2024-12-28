@@ -1,6 +1,6 @@
 import Map from '../components/map';
 
-export default function Home() {
+export default function Page() {
   return (
     <div>
       <Map />
