@@ -43,7 +43,7 @@ const Map = () => {
     }}
     style={{position: 'fixed', width: '100%', height: '100%'}}
     mapStyle="mapbox://styles/mapbox/streets-v9"
-    mapboxAccessToken="pk.eyJ1IjoicGVpeWljIiwiYSI6ImNsaTZ3Y2F2azFpanEzZm11MHNoaGh2djcifQ.Iu-30j4zFOo6BICH__DBAQ"
+    mapboxAccessToken={ process.env.NEXT_PUBLIC_MAPBOX_TOKEN }
     >
         { markers }
 
