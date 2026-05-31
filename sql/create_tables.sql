@@ -3,6 +3,7 @@ CREATE TABLE IF NOT EXISTS farmer (
     name text,
     address text NOT NULL,
     coordinates point NOT NULL,
+    email text,
     PRIMARY KEY (username)
 );
 
