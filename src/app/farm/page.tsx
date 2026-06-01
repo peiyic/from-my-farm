@@ -1,7 +1,11 @@
 "use client"
 import { useSession, signIn } from "next-auth/react"
 import { useState, useEffect, useRef } from "react"
-import { AddressAutofill } from "@mapbox/search-js-react"
+import dynamic from "next/dynamic"
+const AddressAutofill = dynamic(
+  () => import("@mapbox/search-js-react").then((mod) => mod.AddressAutofill),
+  { ssr: false }
+)
 import { Farmer } from "../../models/farmer"
 
 export default function FarmPage() {
