@@ -19,7 +19,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <nav style={{ position: 'fixed', top: 0, left: 0, right: 0, zIndex: 10, display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '0.75rem 1.5rem', background: 'white', boxShadow: '0 1px 4px rgba(0,0,0,0.1)' }}>
             <Link href="/" style={{ fontWeight: 700, fontSize: '1.1rem', textDecoration: 'none', color: '#333' }}>From My Farm</Link>
             <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
-              <Link href="/farm" style={{ textDecoration: 'none', color: '#555' }}>My Farm</Link>
               <LoginButton />
             </div>
           </nav>
