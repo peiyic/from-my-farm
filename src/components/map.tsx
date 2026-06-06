@@ -188,8 +188,26 @@ const Map = () => {
             onClose={() => setPopupInfo(null)}
           >
             <div>
-              <div>Address: {popupInfo.address}</div>
+              <div>Address: <a href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(popupInfo.address)}`} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'underline', border: 'none', outline: 'none' }}>{popupInfo.address}</a></div>
               <div>Products: {(popupInfo.products ?? []).join(', ')}</div>
+              <a
+                href={`https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(popupInfo.address)}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  display: 'inline-block',
+                  marginTop: '8px',
+                  padding: '5px 12px',
+                  background: '#2d7d2f',
+                  color: 'white',
+                  borderRadius: '6px',
+                  fontSize: '12px',
+                  fontWeight: 600,
+                  textDecoration: 'none',
+                }}
+              >
+                Directions
+              </a>
             </div>
           </Popup>
         )}
